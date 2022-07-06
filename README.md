@@ -3,7 +3,7 @@
 
 ## Explanation 
 
-> These are some of the notes writed by [Code Monkey King](https://www.youtube.com/c/MaksimKorzh_aka_CodeMonkeyKing)
+> Some of the notes i writed while i was learning brainfuck 
 
 ###### MODEL:
 

@@ -87,7 +87,7 @@ Make
 ```
 
 
-## TO-DO
+## TO-DO
 
 - [ ] Optimizing the code 
 - [ ] Fixing Bugs

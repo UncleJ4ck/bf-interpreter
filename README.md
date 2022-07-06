@@ -33,49 +33,48 @@ terminates when the instruction pointer moves past the last command.
 `[`   if the byte at the data pointer is zero,then instead of moving the instruction pointer forward to the next command,jump it forward to the command after the matching]command.
 `]`   if the byte at the data pointer is nonzero,then instead of moving the instruction pointer forward to the next command,jump it back to the command after the matching[command.
 
-###### Examples
+## Examples
 
-- VISUAL MEMORY REPRESENTATION:
+- `VISUAL MEMORY REPRESENTATION:`
 
 ###### Initial environment:
-
+```
 cell#               0   1   2   3   4   5   6   7   8   9                                         30000
 
  data             |_0_|___|___|___|___|___|___|___|_0_|_0_|_0_|_0_|_0_|_0_|.......................|_0_|
 pointer             ^
-
+```
 > array of at least 30,000 byte cells initialized to zero
 
 ###### After Code Execution:
 
 1. `>>>>`
-
+```
 cell#               0   1   2   3   4   5   6   7   8   9                                         30000
 
  data             |_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|.......................|_0_|
 pointer                             ^
-
+```
 > move the pointer to the right 4 times 
 
 
 2. `+++++>++`
-
+```
 cell#               0   1   2   3   4   5   6   7   8   9                                         30000
 
  data             |_0_|_0_|_0_|_5_|_2_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|.......................|_0_|
 pointer                             ^
-
+```
 > increment the actual cell (5 times) and move to right and increment it (2 times) 
 
 
 3. `[>+>+<<-]`
-
-
+```
 cell#               0   1   2   3   4   5   6   7   8   9                                         30000
 
  data             |_0_|_0_|_0_|_5_|_0_|_2_|_2_|_0_|_0_|_0_|_0_|_0_|_0_|_0_|.......................|_0_|
 pointer                             ^
-
+```
 >  initialize a loop the value of the current cell is equal to 0 (current value is 2 "index #4") inside the loop move to right and increment move to right increment move to the left cell 2 times and decrement our condition cell 
 
 ## How to install

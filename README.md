@@ -92,3 +92,4 @@ Make
 
 - [ ] Optimizing the code 
 - [ ] Fixing Bugs
+- [ ] Adding the DEBUG option

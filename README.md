@@ -90,5 +90,5 @@ Make
 
 ## TO-DO
 
-[] Optimizing the code 
-[] Fixing Bugs
+- [ ] Optimizing the code 
+- [ ] Fixing Bugs
